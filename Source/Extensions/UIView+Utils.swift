@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension UILabel {
+public extension UILabel {
     var style: EKProperty.LabelStyle {
         set {
             font = newValue.font
@@ -36,7 +36,7 @@ extension UILabel {
     }
 }
 
-extension UIButton {
+public extension UIButton {
     var buttonContent: EKProperty.ButtonContent {
         set {
             setTitle(newValue.label.text, for: .normal)
@@ -113,7 +113,7 @@ extension UIImageView {
     }
 }
 
-extension UITextField {
+public extension UITextField {
     
     var placeholder: EKProperty.LabelContent {
         set {
